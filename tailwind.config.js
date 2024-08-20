@@ -5,6 +5,10 @@ module.exports = {
     fontFamily: {
       'poppins': ['"Poppins"', '"sans-serif"'],
     },
+    colors: {
+      clifford: '#da373d',
+      'bike-primary': '#E76F51',
+    },
     extend: {},
   },
   plugins: [require('daisyui'),],

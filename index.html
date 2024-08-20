@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +21,7 @@
             },
             colors: {
               clifford: '#da373d',
+              'bike-primary': '#E76F51',
             }
           }
         }
@@ -34,10 +35,11 @@
 </head>
 <body class="font-poppins">
     <!-- header section -->
-     <header>
+     <header class="md:container mx-auto">
+        <!-- navbar section -->
         <nav>
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
+                <div class="flex-1">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg
@@ -53,27 +55,19 @@
                           d="M4 6h16M4 12h8m-8 6h16" />
                       </svg>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Home</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>News</a></li>
-                      <li><a>Contact</a></li>
-                    </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">Biker Zone</a>
+                  <a class="font-bold text-2xl">Biker Zone</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
+                  <ul class="menu menu-horizontal text-lg px-1">
                     <li><a>Home</a></li>
                     <li><a>Shop</a></li>
                     <li><a>News</a></li>
                     <li><a>Contact</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end">
-                  <a class="btn">Login</a>
+                <div class="">
+                  <a class="btn bg-bike-primary px-8 text-white">Login</a>
                 </div>
               </div>
         </nav>
