@@ -34,9 +34,11 @@
 
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body class="font-poppins">
+<body
+ class="font-poppins">
     <!-- header section -->
-     <header class="md:container mx-auto">
+     <header
+      class="md:container mx-auto">
 
         <!-- navbar section -->
         <nav>
@@ -75,7 +77,8 @@
         </nav>
 
         <!-- carousel/Slider -->
-        <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
+        <div
+         class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
             <!-- slide-one -->
             <div id="slide1" class="carousel-item relative w-full">
                 <div class="flex flex-col lg:flex-row p-12 lg:p-24">
@@ -160,18 +163,19 @@
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
-          </div>
+        </div>
      </header>
      <!-- main section -->
       <main class="md:container mx-auto">
         <!-- featured bike in this year section  -->
-         <section class="mx-auto grid lg:grid-cols-1 justify-center items-center">
-            <div class="my-12">
+         <section
+          class="mx-auto grid lg:grid-cols-1 justify-center items-center">
+            <div class="my-12 ">
                 <div>
                     <h1 class="font-poppins font-bold text-2xl p-2 lg:text-5xl text-center">Fetured Bikes In This Year</h1>
                     <p class="font-poppins font-semibold text-sm text-center text-bike-primary border-b border-spacing-3 divide-x-reverse border-bike-primary">Best bike collection</p>
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-3 justify-between items-center gap-8 lg:gap-52 mt-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-center gap-8 lg:gap-52 mt-10">
                    <div>
                        <img class="backdrop-grayscale sepia" src="./images/others/feature-bike.png" alt="">
                    </div>
@@ -181,9 +185,79 @@
                     <div>
                         <img class="backdrop-filter backdrop-grayscale sepia backdrop" src="./images/others/feature-bike.png" alt="">
                     </div>
+                    <div class="hidden md:flex lg:hidden ">
+                      <img src="./images/others/feature-bike.png" alt="">
+                  </div>
                 </div>
             </div>
          </section>
+         <!-- Latest news -->
+         <section
+          class="container mx-auto grid grid-cols-1 justify-center items-center py-6 lg:py-14">
+            <!-- header text  -->
+          <h1 class="text-center text-2xl lg:text-6xl font-poppins mb-8 lg:mb-16">Latest News</h1>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8">
+              <!-- card one -->
+            <div
+             class="w-full border p-5 rounded-xl flex flex-col justify-center items-center">
+              <!-- image area -->
+              <div class="mb-5 max-w-full">
+                <img class="max-w-full" src="./images/others/latest1.png" alt="">
+              </div>
+              <!-- text area -->
+              <div class="md:ml-4 lg:ml-4">
+                <h2 class="font-poppins font-bold text-2xl mb-2">Ducati XDIAVEL S-73</h2>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                <button class="btn btn-error"><span class="text-bike-primary-txt">Read More</span></button>
+              </div>
+            </div>
+            <!-- card two -->
+            <div
+             class="w-full border p-5 rounded-xl flex flex-col justify-center items-center">
+              <!-- image area -->
+              <div class="mb-5 max-w-full">
+                <img class="max-w-full" src="./images/others/latest2.png" alt="">
+              </div>
+              <!-- text area -->
+              <div class="md:ml-4 lg:ml-4">
+                <h2 class="font-poppins font-bold text-2xl mb-2">Ducati XDIAVEL S-73</h2>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                <button class="btn btn-outline btn-error"><span class="hover:text-bike-primary-txt">Read More</span></button>
+              </div>
+            </div>
+            <!-- card three  -->
+            <div
+             class="w-full border p-5 rounded-xl flex flex-col justify-center items-center">
+              <!-- image area -->
+              <div class="mb-5 max-w-full">
+                <img class="max-w-full" src="./images/others/latest3.png" alt="">
+              </div>
+              <!-- text area -->
+              <div class="md:ml-4 lg:ml-4">
+                <h2 class="font-poppins font-bold text-2xl mb-2">Ducati XDIAVEL S-73</h2>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                <button class="btn btn-outline btn-error"><span class="hover:text-bike-primary-txt">Read More</span></button>
+              </div>
+            </div>
+            <!-- sm and lg hidden card -->
+            <div class="hidden lg:hidden md:block">
+              <div
+             class="w-full border p-5 rounded-xl flex flex-col justify-center items-center">
+              <!-- image area -->
+              <div class="mb-5 max-w-full">
+                <img class="max-w-full" src="./images/others/latest1.png" alt="">
+              </div>
+              <!-- text area -->
+              <div class="md:ml-4 lg:ml-4">
+                <h2 class="font-poppins font-bold text-2xl mb-2">Ducati XDIAVEL S-73</h2>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                <button class="btn btn-outline btn-error"><span class="hover:text-bike-primary-txt">Read More</span></button>
+              </div>
+              </div>
+            </div>
+          </div>
+         </section>
+        <!--  -->
       </main>
       <!-- footer section -->
     <footer></footer>
